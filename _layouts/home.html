@@ -1,0 +1,35 @@
+---
+layout: default
+title: Home
+---
+
+{% for post in paginator.posts %}
+<div class="posts">
+  <h1>
+    <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
+  </h1>
+  {% if post.image.teaser %}
+    <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image.teaser }}"></a>
+  {% endif %}
+  <p>
+    {{ post.content | split:'<!--break-->' | first }} <a href="{{ site.github.url }}{{ post.url }}">{% if post.content contains '<!--break-->' %}Devamını Oku{% endif %}</a>
+    <span class="post-date" style="margin-top:3px"><i class="fa fa-calendar" aria-hidden="true"></i>{% include date-time.html %} - <i class="fa fa-pencil-square-o" aria-hidden="true"></i> {% include word-count.html %}</span>
+  </p>
+</div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-button pagination-active" href="{{ site.github.url }}{{ paginator.next_page_path }}" class="next">Eski</a>
+  {% else %}
+    <span class="pagination-button">Eski</span>
+  {% endif %}
+
+  {% if paginator.previous_page %}
+    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">Yeni</a>
+    {% else %}
+      <span class="pagination-button">Yeni</span>
+  {% endif %}
+
+</div>

@@ -1,0 +1,9 @@
+{% if post.layout != post %}
+  {% assign words = post.content | strip_html | number_of_words %}
+  {{ words }} kelime
+{% endif %}
+
+{% if post.layout == post %}
+  {% assign words = content | number_of_words %}
+  {{ words }} kelime
+{% endif %}

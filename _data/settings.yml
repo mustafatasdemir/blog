@@ -1,0 +1,21 @@
+title:  Mustafa
+tagline:  hayal, hülya, rüya, şarkı, şiir miir
+author:
+  name: 'Mustafa Taşdemir'
+  twitter:  ironstonemustafa
+
+# Change to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: ''
+
+google-ID: 'UA-58174282-2'
+
+menu:
+- {name: 'Hakkında', url: 'about.html'}
+- {name: 'Arşiv', url: 'writing.html'}
+
+social:
+- {icon: 'rss', link: '{{ site.github.url }}/feed.xml'}
+
+# Available social icons are powered by Font Awesome, so you can use any icon that they offer
