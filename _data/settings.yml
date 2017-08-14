@@ -16,6 +16,6 @@ menu:
 - {name: 'Arşiv', url: 'writing.html'}
 
 social:
-- {icon: 'rss', link: '{{ site.github.url }}/feed.xml'}
+- {icon: 'rss', link: 'https://mustafatasdemir.github.io/blog/feed.xml'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
