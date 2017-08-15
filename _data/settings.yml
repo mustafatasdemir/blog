@@ -13,7 +13,7 @@ google-ID: 'UA-58174282-2'
 
 menu:
 - {name: 'Hakkında', url: 'about.html'}
-- {name: 'Arşiv', url: 'writing.html'}
+- {name: 'Arşiv', url: 'archive.html'}
 
 social:
 - {icon: 'rss', link: 'https://mustafatasdemir.github.io/blog/feed.xml'}

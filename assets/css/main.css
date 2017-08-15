@@ -2,6 +2,10 @@
   Base
 */
 
+#top-social-icons a:hover {
+  color: #bf7600;
+}
+
 body {
   font-family: 'Merriweather', serif;
   font-size: 18px;
@@ -39,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: #42a8c0;
   border-bottom: none;
 }
 
@@ -104,17 +108,18 @@ blockquote p {
 }
 
 .masthead a:hover {
-  color:black;
+  color: #42a8c0;
 }
 
 .masthead-title a {
   font-size: 2rem;
   text-decoration: none;
-  color: #505050;
+  color: #185f84;
 }
 
 .masthead-subtitle {
   color: #999;
+  padding-left: 20px;
 }
 
 /*
