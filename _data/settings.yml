@@ -16,6 +16,6 @@ menu:
 - {name: 'Arşiv', url: 'archive.html'}
 
 social:
-- {icon: 'rss', link: 'mustafatasdemir.net/feed.xml'}
+- {icon: 'rss', link: 'feed.xml'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
