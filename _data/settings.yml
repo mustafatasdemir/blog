@@ -9,13 +9,13 @@ disqus:
   comments: false
   disqus_shortname: ''
 
-google-ID: 'UA-58174282-2'
+google-ID: 'UA-58174282-3'
 
 menu:
 - {name: 'Hakkında', url: 'about.html'}
 - {name: 'Arşiv', url: 'archive.html'}
 
 social:
-- {icon: 'rss', link: 'https://mustafatasdemir.github.io/blog/feed.xml'}
+- {icon: 'rss', link: 'mustafatasdemir.net/feed.xml'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
