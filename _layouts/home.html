@@ -5,16 +5,20 @@ title: Mustafa
 
 {% for post in paginator.posts %}
 <div class="posts">
-  <h1>
-    <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-  </h1>
-  {% if post.image.teaser %}
-    <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image.teaser }}"></a>
+  {% capture time_post %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% capture time_now %}{{ site.time | date: "%Y" | minus:2 }}{% endcapture %}
+  {% if time_post > time_now %}
+    <h1>
+      <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
+    </h1>
+    {% if post.image.teaser %}
+      <a href="{{ site.github.url }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image.teaser }}"></a>
+    {% endif %}
+    <p>
+      {{ post.content | split:'<!--break-->' | first }} <a href="{{ site.github.url }}{{ post.url }}">{% if post.content contains '<!--break-->' %}Devamını Oku{% endif %}</a>
+      <span class="post-date" style="margin-top:3px"><i class="fa fa-calendar" aria-hidden="true"></i>{% include date-time.html %} - <i class="fa fa-pencil-square-o" aria-hidden="true"></i> {% include word-count.html %}</span>
+    </p>
   {% endif %}
-  <p>
-    {{ post.content | split:'<!--break-->' | first }} <a href="{{ site.github.url }}{{ post.url }}">{% if post.content contains '<!--break-->' %}Devamını Oku{% endif %}</a>
-    <span class="post-date" style="margin-top:3px"><i class="fa fa-calendar" aria-hidden="true"></i>{% include date-time.html %} - <i class="fa fa-pencil-square-o" aria-hidden="true"></i> {% include word-count.html %}</span>
-  </p>
 </div>
 {% endfor %}
 
