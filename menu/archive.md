@@ -21,7 +21,7 @@ title: Arşiv
 
       <li itemscope>
         <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-        <p class="post-date"><span><i class="fa fa-calendar" aria-hidden="true"></i> {% include date-time.html %} - <i class="fa fa-pencil-square-o" aria-hidden="true"></i> {% include word-count.html %}</span></p>
+        <p class="post-date-archive"><span><i class="fa fa-calendar" aria-hidden="true"></i> {% include date-time.html %} - <i class="fa fa-pencil-square-o" aria-hidden="true"></i> {% include word-count.html %}</span></p>
       </li>
 
     {% endif %}
