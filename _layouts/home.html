@@ -6,7 +6,7 @@ title: Mustafa
 {% for post in paginator.posts %}
 <div class="posts">
   {% capture time_post %}{{ post.date | date: "%Y" }}{% endcapture %}
-  {% capture time_now %}{{ site.time | date: "%Y" | minus:2 }}{% endcapture %}
+  {% capture time_now %}{{ site.time | date: "%Y" | minus:4 }}{% endcapture %}
   {% if time_post > time_now %}
     <h1>
       <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
